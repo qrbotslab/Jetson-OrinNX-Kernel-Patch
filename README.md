@@ -9,7 +9,7 @@
 
 ## Downloading Resources
 1. Go to [Jetson Linux Archive](https://developer.nvidia.com/embedded/jetson-linux-archive).
-2. Choose Jetson Linux 35.4.1 is part of [JetPack 5.1.2](https://developer.nvidia.com/embedded/jetpack-sdk-512) or the most recent release.
+2. Choose Jetson [Linux 35.4.1](https://developer.nvidia.com/embedded/jetson-linux-r3541) is part of [JetPack 5.1.2](https://developer.nvidia.com/embedded/jetpack-sdk-512) or the most recent release.
 3. Download the following files:
    - [Driver Package (BSP)](https://developer.nvidia.com/downloads/embedded/l4t/r35_release_v4.1/release/jetson_linux_r35.4.1_aarch64.tbz2)
    - [Sample Root Filesystem](https://developer.nvidia.com/downloads/embedded/l4t/r35_release_v4.1/release/tegra_linux_sample-root-filesystem_r35.4.1_aarch64.tbz2)
@@ -38,9 +38,9 @@ sudo ./tools/l4t_flash_prerequisites.sh
 
 Before flashing, apply the following kernel patches:
 
-- Copy *.dtsi files to `Linux_for_Tegra/bootloader/t186ref/BCT`
-- Copy *.dtb files to  `Linux_for_Tegra/kernel/dtb`
-- Copy *.conf files to `Linux_for_Tegra/`
+- Copy `*.dtsi` files to  `Linux_for_Tegra/bootloader/t186ref/BCT`
+- Copy `*.dtb` files to   `Linux_for_Tegra/kernel/dtb`
+- Copy `*.conf` files to `Linux_for_Tegra/`
 
 Edit `Linux_for_Tegra/bootloader/t186ref/BCT/tegra234-mb2-bct-misc-p3767-0000.dts`:
 
