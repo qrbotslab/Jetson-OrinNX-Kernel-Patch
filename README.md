@@ -47,7 +47,7 @@ Edit `Linux_for_Tegra/bootloader/t186ref/BCT/tegra234-mb2-bct-misc-p3767-0000.dt
 ```diff
 - cvb_eeprom_read_size = <0x100>
 + cvb_eeprom_read_size = <0x0>
-
+```
 
 ## Flashing
 
@@ -58,4 +58,4 @@ sudo ./tools/kernel_flash/l4t_initrd_flash.sh --external-device nvme0n1p1 \
 	 -c tools/kernel_flash/flash_l4t_external.xml \
 	 -p "-c bootloader/t186ref/cfg/flash_t234_qspi.xml --no-systemimg" --network usb0 \
 	 qbits-orin-nx nvme0n1p1
-
+```
