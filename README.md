@@ -1,4 +1,4 @@
-# Flashing Guide for Jetson Orin Developer Kit
+# Flashing Guide for Jetson Orin for QBITS Carrier Board
 
 ## Table of Contents
 - [Downloading Resources](#downloading-resources)
