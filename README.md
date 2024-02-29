@@ -5,7 +5,7 @@
 - [System Installation](#system-installation)
 - [Applying Kernel Patches](#applying-kernel-patches)
 - [Flashing](#flashing)
-- [Note](#note)
+- [Issues](#issues)
 
 ## Downloading Resources
 1. Go to [Jetson Linux Archive](https://developer.nvidia.com/embedded/jetson-linux-archive).
