@@ -2,7 +2,7 @@
 
 ## Table of Contents
 - [Downloading Resources](#downloading-resources)
-- [Setting Up Resources](#setting-up-resources)
+- [System Installation](#system-installation)
 - [Applying Kernel Patches](#applying-kernel-patches)
 - [Flashing](#flashing)
 - [Note](#note)
@@ -39,7 +39,7 @@ sudo ./tools/l4t_flash_prerequisites.sh
 Before flashing, apply the following kernel patches:
 
 - Copy *.dtsi files to `Linux_for_Tegra/bootloader/t186ref/BCT`
-- Copy *.dtb files to `Linux_for_Tegra/kernel/dtb`
+- Copy *.dtb files to  `Linux_for_Tegra/kernel/dtb`
 - Copy *.conf files to `Linux_for_Tegra/`
 
 Edit `Linux_for_Tegra/bootloader/t186ref/BCT/tegra234-mb2-bct-misc-p3767-0000.dts`:
