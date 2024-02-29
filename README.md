@@ -1,4 +1,4 @@
-# Flashing Guide for Jetson Orin for QBITS Carrier Board
+# Flashing Guide for Jetson Orin NX with QBITS Carrier Board
 
 ## Table of Contents
 - [Downloading Resources](#downloading-resources)
@@ -9,7 +9,7 @@
 
 ## Downloading Resources
 1. Go to [Jetson Linux Archive](https://developer.nvidia.com/embedded/jetson-linux-archive).
-2. Choose version 35.4.1 or the relevant latest version.
+2. Choose Jetson Linux 35.4.1 is part of [JetPack 5.1.2](https://developer.nvidia.com/embedded/jetpack-sdk-512) or the latest version.
 3. Download the following files:
    - [jetson_linux_r35.4.1_aarch64.tbz2](https://developer.nvidia.com/downloads/embedded/l4t/r35_release_v4.1/release/jetson_linux_r35.4.1_aarch64.tbz2)
    - [tegra_linux_sample-root-filesystem_r35.4.1_aarch64.tbz2](https://developer.nvidia.com/downloads/embedded/l4t/r35_release_v4.1/release/tegra_linux_sample-root-filesystem_r35.4.1_aarch64.tbz2)
