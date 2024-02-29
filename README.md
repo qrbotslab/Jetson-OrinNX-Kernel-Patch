@@ -60,9 +60,9 @@ sudo ./tools/kernel_flash/l4t_initrd_flash.sh --external-device nvme0n1p1 \
 	 qbits-orin-nx nvme0n1p1
 ```
 ## Issues
-If you got `RTNETLINK answers: Permission denied` when use `RCM-BOOT`:
+If you received `RTNETLINK answers: Permission denied` while using `RCM-BOOT`:
 
-A solution that worked was editing `/etc/sysctl.conf` to add:
+To resolve the issue, add the following lines to `/etc/sysctl.conf`:
 ```
 net.ipv6.conf.all.disable_ipv6 = 0
 net.ipv6.conf.default.disable_ipv6 = 0
