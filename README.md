@@ -14,18 +14,26 @@
    - [jetson_linux_r35.4.1_aarch64.tbz2](https://developer.nvidia.com/downloads/embedded/l4t/r35_release_v4.1/release/jetson_linux_r35.4.1_aarch64.tbz2)
    - [tegra_linux_sample-root-filesystem_r35.4.1_aarch64.tbz2](https://developer.nvidia.com/downloads/embedded/l4t/r35_release_v4.1/release/tegra_linux_sample-root-filesystem_r35.4.1_aarch64.tbz2)
 
+## System Installation
+1. Open the terminal on the Ubuntu computer or the host, and create a new file folder:
 ```bash
 sudo mkdir sources_orin
-cd sources_orin 
+cd sources_orin
+```
+2. Move the resource pack to the file folder and unzip it. (In practice, please try to use the tab key to autocomplete commands.)
+```bash
 sudo mv ~/Downloads/jetson_linux_r35.4.1_aarch64.tbz2 ~/sources_orin/            
-sudo mv ~/Downloads/tegra_linux_sample-root-filesystem_r35.4.1_aarch64.tbz2 ~/sources_orin/  
+sudo mv ~/Downloads/tegra_linux_sample-root-filesystem_r35.4.1_aarch64.tbz2 ~/sources_orin/
+```
+3. Unzip the resource.
+```bash
 sudo tar -xjf jetson_linux_r35.4.1_aarch64.tbz2
 cd Linux_for_Tegra/rootfs/
 sudo tar -xjf ../../tegra_linux_sample-root-filesystem_r35.4.1_aarch64.tbz2
 cd ../
 sudo ./apply_binaries.sh
 sudo ./tools/l4t_flash_prerequisites.sh
-
+```
 ## Applying Kernel Patches
 
 Before flashing, apply the following kernel patches:
