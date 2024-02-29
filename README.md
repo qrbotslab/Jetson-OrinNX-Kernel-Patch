@@ -59,3 +59,15 @@ sudo ./tools/kernel_flash/l4t_initrd_flash.sh --external-device nvme0n1p1 \
 	 -p "-c bootloader/t186ref/cfg/flash_t234_qspi.xml --no-systemimg" --network usb0 \
 	 qbits-orin-nx nvme0n1p1
 ```
+## Issues
+If you got `RTNETLINK answers: Permission denied` When use RCM BOOT:
+A solution that worked was editing /etc/sysctl.conf to add:
+```
+net.ipv6.conf.all.disable_ipv6 = 0
+net.ipv6.conf.default.disable_ipv6 = 0
+net.ipv6.conf.lo.disable_ipv6 = 0
+```
+Followed by reboot or just:
+```
+sudo sysctl -p
+```
