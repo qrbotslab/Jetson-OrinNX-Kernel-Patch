@@ -9,10 +9,10 @@
 
 ## Downloading Resources
 1. Go to [Jetson Linux Archive](https://developer.nvidia.com/embedded/jetson-linux-archive).
-2. Choose Jetson Linux 35.4.1 is part of [JetPack 5.1.2](https://developer.nvidia.com/embedded/jetpack-sdk-512) or the latest version.
+2. Choose Jetson Linux 35.4.1 is part of [JetPack 5.1.2](https://developer.nvidia.com/embedded/jetpack-sdk-512) or the most recent release.
 3. Download the following files:
-   - [jetson_linux_r35.4.1_aarch64.tbz2](https://developer.nvidia.com/downloads/embedded/l4t/r35_release_v4.1/release/jetson_linux_r35.4.1_aarch64.tbz2)
-   - [tegra_linux_sample-root-filesystem_r35.4.1_aarch64.tbz2](https://developer.nvidia.com/downloads/embedded/l4t/r35_release_v4.1/release/tegra_linux_sample-root-filesystem_r35.4.1_aarch64.tbz2)
+   - [Driver Package (BSP)](https://developer.nvidia.com/downloads/embedded/l4t/r35_release_v4.1/release/jetson_linux_r35.4.1_aarch64.tbz2)
+   - [Sample Root Filesystem](https://developer.nvidia.com/downloads/embedded/l4t/r35_release_v4.1/release/tegra_linux_sample-root-filesystem_r35.4.1_aarch64.tbz2)
 
 ## System Installation
 1. Open the terminal on the Ubuntu computer or the host, and create a new file folder:
@@ -22,14 +22,14 @@ cd sources_orin
 ```
 2. Move the resource pack to the file folder and unzip it. (In practice, please try to use the tab key to autocomplete commands.)
 ```bash
-sudo mv ~/Downloads/jetson_linux_r35.4.1_aarch64.tbz2 ~/sources_orin/            
-sudo mv ~/Downloads/tegra_linux_sample-root-filesystem_r35.4.1_aarch64.tbz2 ~/sources_orin/
+sudo mv ~/Downloads/Jetson_Linux_R35.4.1_aarch64.tbz2 ~/sources_orin/            
+sudo mv ~/Downloads/Tegra_Linux_Sample-Root-Filesystem_R35.4.1_aarch64.tbz2 ~/sources_orin/
 ```
 3. Unzip the resource.
 ```bash
-sudo tar -xjf jetson_linux_r35.4.1_aarch64.tbz2
+sudo tar -xjf Jetson_Linux_R35.4.1_aarch64.tbz2
 cd Linux_for_Tegra/rootfs/
-sudo tar -xjf ../../tegra_linux_sample-root-filesystem_r35.4.1_aarch64.tbz2
+sudo tar -xjf ../../Tegra_Linux_Sample-Root-Filesystem_R35.4.1_aarch64.tbz2
 cd ../
 sudo ./apply_binaries.sh
 sudo ./tools/l4t_flash_prerequisites.sh
