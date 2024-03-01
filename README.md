@@ -76,6 +76,27 @@ After rebooting, to run jtop open a Terminal and execute:
 ```bash
 jtop
 ```
+
+## Install Jetson Default Packages
+
+`install_jetson_default_packages.sh`
+Executing the script will install the metapackage nvida-jetpack which in turn installs the following metapackages:
+ 
+ * nvidia-cuda
+ * nvidia-cudnn
+ * nvidia-tensorrt
+ * nvidia-visionworks
+ * nvidia-vpi
+ * nvidia-l4t-jetson-multimedia-api
+ * nvidia-opencv
+ 
+ The script installs other packages, to match the default SD Card installation. These include:
+ 
+ * libtbb-dev
+ * uff-converter-tf
+ * python3-vpi1
+ * python3-libnvinfer-dev
+ * Various Python2.7 support files
 ## Issues
 If you received `RTNETLINK answers: Permission denied` while using `RCM-BOOT`:
 
