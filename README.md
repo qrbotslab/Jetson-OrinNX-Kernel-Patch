@@ -5,6 +5,7 @@
 - [System Installation](#system-installation)
 - [Applying Kernel Patches](#applying-kernel-patches)
 - [Flashing](#flashing)
+- [Install Jetson Default Packages](#Install-jetson-default-packages)
 - [Issues](#issues)
 
 ## Downloading Resources
@@ -59,6 +60,7 @@ sudo ./tools/kernel_flash/l4t_initrd_flash.sh --external-device nvme0n1p1 \
 	 -p "-c bootloader/t186ref/cfg/flash_t234_qspi.xml --no-systemimg" --network usb0 \
 	 qbits-orin-nx nvme0n1p1
 ```
+Once the Jetson is flashed, switch to the Jetson. Go through the standard oem-config procedure.
 ## Install jtop - The Ultimate Tool for Monitoring NVIDIA Jetson Devices
 
 ```bash
