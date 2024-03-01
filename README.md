@@ -59,6 +59,23 @@ sudo ./tools/kernel_flash/l4t_initrd_flash.sh --external-device nvme0n1p1 \
 	 -p "-c bootloader/t186ref/cfg/flash_t234_qspi.xml --no-systemimg" --network usb0 \
 	 qbits-orin-nx nvme0n1p1
 ```
+## Install jtop - The Ultimate Tool for Monitoring NVIDIA Jetson Devices
+
+```bash
+sudo apt update
+sudo apt install python3-pip
+```
+After pip installs:
+
+```bash
+sudo pip3 install -U jetson-stats
+```
+Once pip installs the jetson-stats package, you will need to logout/login or reboot the Jetson.
+After rebooting, to run jtop open a Terminal and execute:
+
+```bash
+jtop
+```
 ## Issues
 If you received `RTNETLINK answers: Permission denied` while using `RCM-BOOT`:
 
