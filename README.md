@@ -61,6 +61,7 @@ sudo ./tools/kernel_flash/l4t_initrd_flash.sh --external-device nvme0n1p1 \
 	 qbits-orin-nx nvme0n1p1
 ```
 Once the Jetson is flashed, switch to the Jetson. Go through the standard oem-config procedure.
+On the Jetson,
 ## Install jtop - The Ultimate Tool for Monitoring NVIDIA Jetson Devices
 
 ```bash
