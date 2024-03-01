@@ -61,26 +61,10 @@ sudo ./tools/kernel_flash/l4t_initrd_flash.sh --external-device nvme0n1p1 \
 	 qbits-orin-nx nvme0n1p1
 ```
 Once the Jetson is flashed, switch to the Jetson. Go through the standard oem-config procedure.
-On the Jetson,
-## Install jtop - The Ultimate Tool for Monitoring NVIDIA Jetson Devices
-
-```bash
-sudo apt update
-sudo apt install python3-pip
-```
-After pip installs:
-
-```bash
-sudo pip3 install -U jetson-stats
-```
-Once pip installs the jetson-stats package, you will need to logout/login or reboot the Jetson.
-After rebooting, to run jtop open a Terminal and execute:
-
-```bash
-jtop
-```
 
 ## Install Jetson Default Packages
+
+First, configure the Jetson through the standard oem-config process. Then you are ready to install the default JetPack packages using this script. You will need to either download the script or clone this repository on the Jetson itself. The Jetson must be connected to the Internet.
 
 Run:
 ```bash
@@ -103,6 +87,25 @@ Executing the script will install the metapackage nvida-jetpack which in turn in
  * python3-vpi1
  * python3-libnvinfer-dev
  * Various Python2.7 support files
+
+## Install jtop - The Ultimate Tool for Monitoring NVIDIA Jetson Devices
+
+```bash
+sudo apt update
+sudo apt install python3-pip
+```
+After pip installs:
+
+```bash
+sudo pip3 install -U jetson-stats
+```
+Once pip installs the jetson-stats package, you will need to logout/login or reboot the Jetson.
+After rebooting, to run jtop open a Terminal and execute:
+
+```bash
+jtop
+```
+
 ## Issues
 If you received `RTNETLINK answers: Permission denied` while using `RCM-BOOT`:
 
