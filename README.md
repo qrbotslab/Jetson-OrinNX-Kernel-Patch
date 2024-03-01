@@ -79,7 +79,10 @@ jtop
 
 ## Install Jetson Default Packages
 
-`install_jetson_default_packages.sh`
+Run:
+```bash
+./install_jetson_default_packages.sh
+```
 Executing the script will install the metapackage nvida-jetpack which in turn installs the following metapackages:
  
  * nvidia-cuda
